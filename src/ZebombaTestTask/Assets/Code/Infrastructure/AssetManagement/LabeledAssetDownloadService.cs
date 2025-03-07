@@ -32,7 +32,7 @@ namespace Code.Infrastructure.AssetManagement
         {
             try
             {
-                AsyncOperationHandle downloadHandle = Addressables.DownloadDependenciesAsync(DownloadServiceConstants.RemoteLabel);
+                AsyncOperationHandle downloadHandle = Addressables.DownloadDependenciesAsync(DownloadServiceConstants.LocalLabel);
 
                 while (!downloadHandle.IsDone && downloadHandle.IsValid())
                 {
@@ -71,7 +71,7 @@ namespace Code.Infrastructure.AssetManagement
             try
             {
                 _downloadSize = await Addressables
-                    .GetDownloadSizeAsync(DownloadServiceConstants.RemoteLabel)
+                    .GetDownloadSizeAsync(DownloadServiceConstants.LocalLabel)
                     .ToUniTask();
             }
             catch (Exception e)
