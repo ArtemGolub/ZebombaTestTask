@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
-    "com.unity.addressables": "1.21.21",
+    "com.unity.addressables": "2.2.2",
+    "com.unity.addressables.android": "1.0.6",
     "com.unity.collab-proxy": "2.5.2",
     "com.unity.feature.development": "1.0.1",
     "com.unity.mathematics": "1.2.6",
